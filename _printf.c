@@ -9,25 +9,25 @@ specifiers_t specifiers[] = {
 {NULL, NULL}
 };
 
-for (i = 0; format[i] != '\0'; i++)
-{
-if (format[i] == '%')
-{
-if (format[i + 1] == (specifiers + i)-> dir)
-{
-(specifiers + i)->f();
-}		
-}
-else
-{
-print_char(format[i]);
-}
-va_list arg_ls
-va_start(arg_ls, format);
+ for (i = 0; format[i] != '\0'; i++)
+   {
+     if (format[i] == '%')
+       {
+	 if (format[i + 1] == (specifiers + i)-> dir)
+	   {
+	     (specifiers + i)->f();
+	   }		
+       }
+     else
+       {
+	 print_char(format[i]);
+       }
+     va_list arg_ls
+       va_start(arg_ls, format);
 
 
 
-va_end(arg_ls);	
+     va_end(arg_ls);	
 }
 
 
