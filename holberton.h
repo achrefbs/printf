@@ -1,5 +1,6 @@
+#include <stdio.h>
 int _printf(const char *format, ...);
-int printchar(char c);
+int print_char(char c);
 int print_string(char *c);
 typedef struct specifiers
 {
