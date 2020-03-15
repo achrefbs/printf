@@ -7,4 +7,10 @@ specifiers_t specifiers[] = {
 {"s", print_string},
 {NULL, NULL}
 };
+
+
+
+
+
+
 }
