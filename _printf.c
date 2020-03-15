@@ -5,6 +5,7 @@ int _printf(const char *format, ...)
 specifiers_t specifiers[] = {
 {"c", print_char},
 {"s", print_string},
+{"%", print_char('%')},
 {NULL, NULL}
 };
 
