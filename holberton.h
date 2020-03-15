@@ -1,2 +1,2 @@
 int _printf(const char *format, ...);
-int printchar(char c)
+int printchar(char c);
