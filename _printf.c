@@ -1,6 +1,7 @@
 #include "holberton.h"
 int _printf(const char *format, ...)
 {
+va_list args;
 int i;
 specifiers_t specifiers[] = {
 {"c", print_char},
@@ -8,26 +9,20 @@ specifiers_t specifiers[] = {
 {"%", print_char('%')},
 {NULL, NULL}
 };
-
- for (i = 0; format[i] != '\0'; i++)
-   {
-     if (format[i] == '%')
-       {
-	 if (format[i + 1] == (specifiers + i)-> dir)
-	   {
-	     (specifiers + i)->f();
-	   }		
-       }
-     else
-       {
-	 print_char(format[i]);
-       }
-     va_list arg_ls
-       va_start(arg_ls, format);
-
-
-
-     va_end(arg_ls);	
+va_start(args, format);
+for (i = 0; format[i] != '\0'; i++)
+{
+	if (format[i] == '%')
+		{
+			if (format[i + 1] == (specifiers + i)-> dir)
+			{
+				(specifiers + i)->f(va_arg(args, char));
+			}
+		}
+	else
+		{
+			print_char(format[i]);
+		}
 }
 
 
