@@ -30,5 +30,6 @@ for (i = 0; format[i] != '\0'; i++)
 			_putchar(format[i]);
 		}
 }
+va_end(argslist);
 return (0);
 }
