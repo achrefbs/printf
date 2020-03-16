@@ -8,7 +8,8 @@ specifiers_t specifiers[] = {
 {'s', print_string},
 };
 va_start(argslist, format);
-
+if (!format)
+return (-1);
 for (i = 0; format[i] != '\0'; i++)
 {
 	if (format[i] == '%')
@@ -32,8 +33,6 @@ for (i = 0; format[i] != '\0'; i++)
 			_putchar(format[i]);
 			l += 1;
 		}
-if (!format && !format[i + 1])
-return (-1);
 }
 va_end(argslist);
 return (l);
