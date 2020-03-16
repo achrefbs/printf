@@ -1,0 +1,26 @@
+.TH man 3 "16 March 2020" "0.32" "_printf man page"
+.SH NAME
+.B _printf
+- creating our own printf function.
+.SH SYNOPSIS
+you need the header file "holberton.h" in order to use this function.
+.SH DESCRIPTION
+_printf function produces output and write it to stdout according to a format that will be described below
+.SH USAGE
+in order to use this printf function (_printf) you have to use % followed by one of the characters below
+.c
+used to print characters
+.s
+used to print strings
+.d
+used to print inetegrs with precised size (from max to min)
+.i
+used to print inetegrs with precised size (from max to min)
+.SEE ALSO
+printf man page 3
+.SH RETURN VALUE
+_printf function return the lenght of the input
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Achref Boularess, Foued Dadi
