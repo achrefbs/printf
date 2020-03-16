@@ -24,7 +24,7 @@ for (i = 0; format[i] != '\0'; i++)
 				i += 1;
 				l += 1;
 			}
-       	}
+			return (-1);}
 	
 	else
 		{
