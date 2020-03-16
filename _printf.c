@@ -2,31 +2,25 @@
 int _printf(const char *format, ...)
 {
 va_list args;
-int i;
+int i, j = 0;
 specifiers_t specifiers[] = {
-{"c", print_char},
-{"s", print_string},
-{"%", print_char('%')},
-{NULL, NULL}
+{'c', print_char},
+{'s', print_string},
 };
 va_start(args, format);
 for (i = 0; format[i] != '\0'; i++)
 {
 	if (format[i] == '%')
 		{
-			if (format[i + 1] == (specifiers + i)-> dir)
+			if (format[i + 1] == (specifiers + j)->dir)
 			{
-				(specifiers + i)->f(va_arg(args, char));
+				(specifiers + j)->f();
 			}
 		}
 	else
 		{
-			print_char(format[i]);
+			_putchar(format[i]);
 		}
 }
-
-
-
-
-
+return (0);
 }
