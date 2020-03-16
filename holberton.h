@@ -7,5 +7,5 @@ int print_string(va_list argslist);
 typedef struct specifiers
 {
 	char dir;
-	int (*f)();
+	int (*f)(va_list argslist);
 }specifiers_t;
