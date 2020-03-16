@@ -24,16 +24,15 @@ for (i = 0; format[i] != '\0'; i++)
 				i += 1;
 				l += 1;
 			}
-		}
+       	}
 	
-	  if (!format || !format[i + 1] || argslist == NULL)
-	   return (-1);
-			
 	else
 		{
 			_putchar(format[i]);
 			l += 1;
 		}
+	if (!format || !format[i + 1] || argslist == NULL)
+	  return (-1);
 }
 va_end(argslist);
 return (l);
