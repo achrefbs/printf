@@ -18,6 +18,12 @@ for (i = 0; format[i] != '\0'; i++)
 				(specifiers + j)->f(argslist);
 				i += 1;
 			}
+			else if (format[i + 1] == '%')
+			{
+				_putchar('%');
+				i += 1;
+			}
+			
 		}
 	else
 		{
