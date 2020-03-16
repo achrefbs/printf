@@ -1,8 +1,9 @@
 #include "holberton.h"
-int print_numbers(va_list argsn)
+#include <stdarg.h>
+int print_numbers(va_list argslist)
 {
-int *n;
-n = va_arg(argsn, int *)
+int n;
+n = va_arg(argslist, int *);
 if (n / 10 != 0)
     {
       print_number(n / 10);
