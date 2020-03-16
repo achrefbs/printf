@@ -4,6 +4,8 @@ int print_string(va_list argslist)
 int x, l;
 char *c;
 c = va_arg(argslist, char *);
+if (c == NULL)
+c = "(null)";
 for (x = 0; c[x] != '\0'; x++)
 {
 _putchar(c[x]);
