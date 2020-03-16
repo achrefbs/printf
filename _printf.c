@@ -8,8 +8,7 @@ specifiers_t specifiers[] = {
 {'s', print_string},
 };
 va_start(argslist, format);
-if (!format)
-return (-1);
+
 for (i = 0; format[i] != '\0'; i++)
 {
 	if (format[i] == '%')
