@@ -4,7 +4,6 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list argslist);
 int print_string(va_list argslist);
-int print_numbers(va_list argslist);
 typedef struct specifiers
 {
 	char dir;
