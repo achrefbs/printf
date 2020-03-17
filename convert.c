@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-
-long de_to_bi(int d)
+#include <stdarg.h>
+#include "holberton.h"
+int de_to_bi(va_list argslist)
 {
-long b = 0;
+int d = va_arg(argslist, int);
+int b = 0;
 int r, tmp = 1;
 while (d != 0)
 {
@@ -12,5 +14,6 @@ d = d / 2;
 b = b + r * tmp;
 tmp = tmp * 10;
 }
-return b;
+print_integer(b);
+return (0);
 }
