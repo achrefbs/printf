@@ -6,7 +6,6 @@ int i, j, l = 0;
 specifiers_t specifiers[] = {
 {'c', print_char},
 {'s', print_string},
-{'d', print_numbers}
 };
 va_start(argslist, format);
 if (format == NULL)
