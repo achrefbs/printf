@@ -8,6 +8,7 @@ specifiers_t specifiers[] = {
 {"s", print_string},
 {"d", print_integer},
 {"i", print_integer},
+{"b", de_to_bi},
 {NULL,NULL},
 };
 if (format == NULL)
