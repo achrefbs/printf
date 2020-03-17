@@ -4,7 +4,7 @@
 #include "holberton.h"
 int de_to_bi(va_list argslist)
 {
-int d = va_arg(argslist, int);
+int d = va_arg(argslist, unsigned int);
 int b = 0;
 int r, tmp = 1;
 while (d != 0)
