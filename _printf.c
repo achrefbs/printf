@@ -20,10 +20,6 @@ for (i = 0; format[i] != '\0'; i++)
 				l += (specifiers + j)->f(argslist);
 				i += 1;
 			}
-			else if (format[i + 1] == '\0')
-			{
-				return (-1);
-			}
 			else if (format[i + 1] == '%')
 			{
 				_putchar('%');
