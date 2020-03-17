@@ -7,6 +7,6 @@ int print_string(va_list argslist);
 int print_integer(va_list argslist);
 typedef struct specifiers
 {
-	char dir;
+	char *dir;
 	int (*f)(va_list argslist);
 }specifiers_t;
