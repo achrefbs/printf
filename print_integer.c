@@ -11,7 +11,7 @@ int reverse(int n)
 }
 int print_integer(va_list argslist)
 {
-  int i, l, n = 0;
+  int i, l = 0, n = 0;
   n = va_arg(argslist, int);
   if (n < 0)
   {

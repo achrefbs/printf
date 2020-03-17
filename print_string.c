@@ -2,7 +2,7 @@
 #include <stdarg.h>
 int print_string(va_list argslist)
 {
-int x, l;
+int x, l = 0;
 char *c;
 c = va_arg(argslist, char *);
 if (c == NULL)
