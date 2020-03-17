@@ -15,6 +15,10 @@ t = (t * 10 )+ n%10;
 n = (n - n%10) /10;}
 return(t);
 }
+/**
+ *print_integer- function to print integer
+ *Return: return lenght l
+ */
 int print_integer(va_list argslist)
 {
 int i, l = 0, n = 0;
