@@ -14,14 +14,14 @@ specifiers_t specifiers[] = {
 {"d", print_integer},
 {"i", print_integer},
 {"b", de_to_bi},
-{NULL,NULL},
+{NULL, NULL},
 };
 if (format == NULL)
 return (-1);
 va_start(argslist, format);
 for (i = 0; format[i] != '\0'; i++)
 {
-if(format[i] == '%')
+if (format[i] == '%')
 {
 i++;
 if (format[i] == '\0')
