@@ -24,7 +24,7 @@ for (i = 0; format[i] != '\0'; i++)
     _putchar(format[i]);
     l++;
     }
-    for (j = 0; j < 2; j++)
+    for (j = 0; (specifiers + j)->dir != NULL; j++)
     {
       if (format[i] == *(specifiers + j)->dir)
       l += (specifiers + j)->f(argslist);
@@ -32,11 +32,9 @@ for (i = 0; format[i] != '\0'; i++)
 	}
 	else
 	{
-			_putchar(format[i]);
-			l++;
+		_putchar(format[i]);
+		l++;
 	}
- 
-  
 }
 
 va_end(argslist);
