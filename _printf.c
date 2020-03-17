@@ -24,10 +24,6 @@ for (i = 0; format[i] != '\0'; i++)
 			{
 				return (-1);
 			}
-			else if (format[i + 1] == ' ')
-			{
-				i += 1;
-			}
 			else if (format[i + 1] == '%')
 			{
 				_putchar('%');
