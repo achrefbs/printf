@@ -19,7 +19,10 @@ int print_integer(va_list argslist)
   n = -n;
   }
   if (n == 0)
+  {
   _putchar('0');
+  return (0);
+  }
   n = reverse(n);
   for (i = 0; n > 0; i++)
   {
