@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ *_printf- function that acts like printf
+ *@format: format
+ *Return: return 1 or -1 and l
+ */
 int _printf(const char *format, ...)
 {
 va_list argslist;
