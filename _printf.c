@@ -7,7 +7,8 @@ specifiers_t specifiers[] = {
 {"c", print_char},
 {"s", print_string},
 {"d", print_integer},
-{NULL,NULL }
+{"i", print_integer},
+{NULL,NULL},
 };
 if (format == NULL)
 return (-1);
