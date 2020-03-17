@@ -1,5 +1,9 @@
 #include "holberton.h"
 #include <stdarg.h>
+/**
+ *print_char- funct that print a char
+ *Return: return 1
+ */
 int print_char(va_list argslist)
 {
 char c;
