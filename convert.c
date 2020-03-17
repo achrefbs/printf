@@ -2,6 +2,11 @@
 #include <math.h>
 #include <stdarg.h>
 #include "holberton.h"
+/**
+ *reverse- function to reverse
+ *@n: integer
+ *Return: return t
+ */
 int reverses(int n)
 {
 int i, t = 0;
@@ -11,6 +16,11 @@ t = (t * 10 )+ n%10;
 n = (n - n%10) /10;}
 return(t);
 }
+/**
+ *print_number- function that print number
+ *@n: integer
+ *Return: return 0 and l
+ */
 int print_number(int n)
 {
 int i, l;
@@ -33,6 +43,10 @@ l++;
 }
 return (l);
 }
+/**
+ *de_to_bi- function that converts from decimal to binary 
+ *Return: return 0
+ */
 int de_to_bi(va_list argslist)
 {
 int d = va_arg(argslist, unsigned int);
