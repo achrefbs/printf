@@ -8,6 +8,6 @@ int print_integer(va_list argslist);
 int de_to_bi(va_list argslist);
 typedef struct specifiers
 {
-	char *dir;
-	int (*f)(va_list argslist);
+char *dir;
+int (*f)(va_list argslist);
 }specifiers_t;
