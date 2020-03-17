@@ -12,13 +12,10 @@ if (format == NULL)
 return (-1);
 va_start(argslist, format);
 
-
-
-
 for (i = 0; format[i] != '\0'; i++)
 {
   if(format[i] == '%')
-  {
+  	{
     i++;
     if (format[i] == '\0')
     return (-1);
@@ -32,12 +29,14 @@ for (i = 0; format[i] != '\0'; i++)
       if (format[i] == *(specifiers + j)->dir)
       l += (specifiers + j)->f(argslist);
     }
-  }
-  else
-  {
-    	_putchar(format[i]);
-		  l++;
-  }
+	}
+	else
+	{
+			_putchar(format[i]);
+			l++;
+	}
+ 
+  
 }
 
 va_end(argslist);
