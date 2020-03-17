@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "holberton.h"
+/**
+ *reverse- function that reverse an int
+ *@n: integer
+ *Return: return t;
+ */
 int reverse(int n)
 {
 int i, t = 0;
