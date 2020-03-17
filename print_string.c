@@ -1,5 +1,10 @@
 #include "holberton.h"
 #include <stdarg.h>
+/**
+ *print_string- func that print a string
+ *Return: return 1
+ *
+ */
 int print_string(va_list argslist)
 {
 int x, l = 0;
