@@ -23,9 +23,9 @@ return (t);
  *@c: character
  *@i: integer
  */
-void rev(char *c, int i)
+void rev(char *c, unsigned int i)
 {
-int j;
+unsigned int j;
 char tmp;
 for (j = 0; j < (i / 2); j++)
 {
@@ -42,7 +42,7 @@ c[i - j - 1] = tmp;
  */
 int intlength(int n)
 {
-int l = 0;
+unsigned int l = 0;
 while (n != 0)
 {
 n /= 10;
