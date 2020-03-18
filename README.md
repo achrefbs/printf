@@ -300,7 +300,8 @@ make_message(const char *fmt, ...)
        if ((np = realloc (p, size)) == NULL) {
             free(p);
             return NULL;
-        } else {
+        } else 
+		{
             p = np;
         }
     }
