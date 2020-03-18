@@ -23,9 +23,9 @@ return (t);
  *@c: character
  *@i: integer
  */
-void rev(char *c, unsigned int i)
+void rev(char *c, int i)
 {
-unsigned int j;
+int j;
 char tmp;
 for (j = 0; j < (i / 2); j++)
 {
@@ -42,7 +42,7 @@ c[i - j - 1] = tmp;
  */
 int intlength(int n)
 {
-unsigned int l = 0;
+int l = 0;
 while (n != 0)
 {
 n /= 10;
@@ -57,7 +57,7 @@ return (l);
  */
 int print_integer(va_list argslist)
 {
-unsigned int i, c, n = 0;
+int i, c, n = 0;
 char *res;
 n = va_arg(argslist, int);
 c = intlength(n);
