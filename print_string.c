@@ -2,6 +2,7 @@
 #include <stdarg.h>
 /**
  *print_string- func that print a string
+ *@argslist: list of arguments
  *Return: return 1
  *
  */
