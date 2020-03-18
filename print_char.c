@@ -2,6 +2,7 @@
 #include <stdarg.h>
 /**
  *print_char- funct that print a char
+ *@argslist: list of arguments
  *Return: return 1
  */
 int print_char(va_list argslist)
