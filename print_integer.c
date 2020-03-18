@@ -57,7 +57,7 @@ return (l);
  */
 int print_integer(va_list argslist)
 {
-long i, c, n = 0;
+int i, c, n = 0;
 char *res;
 n = va_arg(argslist, int);
 c = intlength(n);
