@@ -17,7 +17,6 @@ n = (n - n % 10) / 10;
 }
 return (t);
 }
-/*just checking */
 /**
  *print_number- function that print number
  *@n: integer
