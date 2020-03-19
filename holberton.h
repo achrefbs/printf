@@ -2,11 +2,13 @@
 #define _HOLBERTON_H_
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  *struct specifiers- struct
  *@dir: charac
  *@f: function needed
  */
+ 
 typedef struct specifiers
 {
 char *dir;
